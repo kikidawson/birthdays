@@ -24,11 +24,24 @@ More requirements:
 - Test-drive extracting a birthday class
 - Isolate your birthday list class using a mock for Birthday
 
-### TDD resources
+### PLANNING
 
-- https://github.com/makersacademy/course/blob/master/pills/tdd.md
-- https://github.com/makersacademy/course/blob/master/pills/tdd_quality_discussion.md
+NOUNS
+BirthdayList - owner
+Birthday - owner
+name - property of BirthdayList
 
-### Mocking
+ACTIONS
+store - store someones birthday
+see_all - lists all brithdays
+age - works out persons age
+see_today - lists todays birthdays and their age
 
-- https://relishapp.com/rspec/rspec-mocks/docs/basics/test-doubles
+BirthdayList
+all - lists all birthdays in list
+add - takes name and birthday and saves to list
+today - lists birthdays today
+
+Birthday
+date - takes date
+age - works out age from dob
